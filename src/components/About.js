@@ -4,7 +4,8 @@ function About() {
       <h2>About Me</h2>
       <p>I made this</p>
       <img
-        src="/images/demo.png" // NOTE: this will only work if the server exposes /images/
+        src="./images/demo.png" // Image not loading because React restricts access to files outside the `src/` or `public/` directories.
+
         alt="I made this"
         style={{ width: "300px", marginTop: "20px" }}
       />
