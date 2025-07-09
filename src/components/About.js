@@ -1,15 +1,13 @@
 function About() {
-  return (
-    <div id="about" style={{ textAlign: "center", marginTop: "40px" }}>
-      <h2>About Me</h2>
-      <p>I made this</p>
-      <img
-        src="./images/demo.png" // Image not loading because React restricts access to files outside the `src/` or `public/` directories.
+  const demoImage = "/images/demo.png"; // pretend it's imported
 
-        alt="I made this"
-        style={{ width: "300px", marginTop: "20px" }}
-      />
+  return (
+    <div id="about">
+      <h2>About Me</h2>
+      <p>I love building UIs</p>
+      <img src={demoImage} alt="I made this" />
     </div>
   );
 }
+
 export default About;
